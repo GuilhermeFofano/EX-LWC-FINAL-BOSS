@@ -1,0 +1,26 @@
+import { LightningElement } from 'lwc';
+
+export default class exerc1 extends LightningElement {
+    nome;
+    weight;
+    height;
+    imc;
+
+    handleNameChange(event){
+        this.name = event.target.value;
+    }
+    handleWeightChange(event){
+        this.weight = parseFloat(event.target.value);
+    }
+    handleHeightChange(event){
+        this.height = parseFloat(event.target.value);
+    }
+
+    onClickersons(){
+        if(this.weight && this.height){
+            const alturaQuadrado = this.height*this.height;
+            const imcCalculado = this.weight/alturaQuadrado;
+            this.imc = imcCalculado.toFixed(2);
+        }
+    }
+}

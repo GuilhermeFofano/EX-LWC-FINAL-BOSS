@@ -1,0 +1,15 @@
+<template>
+    <lightning-card title="IMC aqui">
+        <div class="slds-m-arround_medium">
+            <lightning-input label="Primeiro nome: " type="Text" name="firstname" onblur={handleNameChange}></lightning-input><br>
+            <lightning-input label="Peso: " type="Number" name="weight" onblur={handleWeightChange}></lightning-input><br>
+            <lightning-input label="Altura: " type="Number" name="height" onblur={handleHeightChange}></lightning-input><br>
+
+            <lightning-button variant="Brand" label="Calcular IMC" onclick={onClickersons}></lightning-button>
+            seu imc é: {imc}
+        </div>
+
+
+    </lightning-card>
+    
+</template>
