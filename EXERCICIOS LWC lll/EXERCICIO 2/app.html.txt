@@ -1,6 +1,6 @@
 <template>
 	<div class="app slds-p-around_x-large">
-		<lightning-input label="Primeiro nome: " type="Text" name="firstname" onchange={handleInputChange}>
+		<lightning-input label="Primeiro nome: " type="Text" name="firstName" onchange={handleInputChange}>
 		</lightning-input><br>
 		<lightning-input label="Sobrenome: " type="Text" name="lastName" onchange={handleInputChange}></lightning-input><br>
 		<lightning-input label="Email: " type="phone" name="email" onchange={handleInputChange}></lightning-input><br>
